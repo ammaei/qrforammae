@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "QR for ammae",
+  "description": "Adds QR to easy balance top up on the royal-flush.poker website",
+  "version": "1.0.1",
+  "icons": {
+    "128": "icons/icon-128.png",
+    "96": "icons/icon-96.png",
+    "72": "icons/icon-72.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://royal-flush.poker/*"],
+      "css": ["style.css"]
+    }
+  ]
+}
